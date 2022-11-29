@@ -26,36 +26,51 @@
   <body>
     <header>
       <!-- nav bar -->
-      <div class="container">
-        <div class="row">
-          <img
-            class="logo"
-            src="../imagenes/logo_vaca_carniceria.png"
-            alt="Logo de la Carniceria la esmeralda "
-          />
-          <h1 class="titulo">Carniceria La Esmeralda</h1>
-
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav_item">
-                <a class="nav__link" href="../index.html">Inicio</a>
+      <nav class="navbar navbar-expand-lg navbar-dark menu">
+        <div class="container">
+          <a class="navbar-brand" href="/"
+            ><img
+              src="../imagenes/logo_vaca_carniceria.png"
+              alt="Logo de la Carniceria la esmeralda"
+              class="logo"
+            />
+          </a>
+          <h1 class="fs-2 fw-bold">Carniceria La Esmeralda</h1>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item px-2">
+                <a class="nav__link" aria-current="page" href="/">Inicio</a>
               </li>
-              <li class="nav_item">
+              <li class="nav-item px-2">
                 <a class="nav__link" href="productos.html">Productos</a>
               </li>
-              <li class="nav_item">
+              <li class="nav-item px-2">
                 <a class="nav__link" href="ofertas.html">Ofertas</a>
               </li>
-              <li class="nav_item">
+              <li class="nav-item px-2">
                 <a class="nav__link" href="nosotros.html">Nosotros</a>
               </li>
-              <li class="nav_item">
+              <li class="nav-item px-2">
                 <a class="nav__link" href="contactenos.html">Contactenos</a>
               </li>
             </ul>
-          </nav>
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
     <div class="caja_contacto">
       <div class="contenedor_form">

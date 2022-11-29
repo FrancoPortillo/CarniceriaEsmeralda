@@ -23,21 +23,6 @@ header {
   );
   padding: 0.5rem 0 2rem 0;
 }
-.nav_item {
-  margin: 0 0 0 1.5rem;
-}
-.nav__list {
-  list-style: none;
-  display: flex;
-}
-.nav__link {
-  color: black;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-.nav__link:hover {
-  opacity: 0.7;
-}
 
 .container_tarjetas {
   display: flex;
@@ -197,8 +182,22 @@ header {
     width: 80%;
   }
   .nav {
-    visibility: visible;
     display: flex;
+  }
+  .nav_item {
+    margin: 0 0 0 1.5rem;
+  }
+  .nav__list {
+    list-style: none;
+    display: flex;
+  }
+  .nav__link {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .nav__link:hover {
+    opacity: 0.7;
   }
   .caja {
     width: 80%;
