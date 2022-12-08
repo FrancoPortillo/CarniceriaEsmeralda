@@ -182,6 +182,9 @@ header {
   overflow: hidden;
   padding-top: 30.25%;
 }
+.animate__animated.animate__bounceIn {
+  --animate-duration: 4s;
+}
 
 @media (min-width: 768px) {
   .container {
