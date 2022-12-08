@@ -3,9 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-img {
+/*img {
   max-width: 100%;
-}
+} */
 
 .titulo {
   width: 100%;
@@ -21,16 +21,15 @@ header {
     rgba(68, 224, 149, 1) 35%,
     rgba(22, 217, 123, 1) 100%
   );
-  padding: 0.5rem 0 2rem 0;
-}
-
-.container_tarjetas {
-  display: flex;
-  justify-content: center;
+  /* padding: 0.5rem 0 2rem 0; */
 }
 .logo {
   width: 100px;
   height: 100px;
+}
+.container_tarjetas {
+  display: flex;
+  justify-content: center;
 }
 
 .container_imagen {
@@ -98,11 +97,6 @@ header {
   max-width: 1320px;
 }
 
-.row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .footer {
   background: rgb(254, 254, 254);
   background: linear-gradient(
