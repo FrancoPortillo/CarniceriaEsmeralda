@@ -3,10 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-/*img {
-  max-width: 100%;
-} */
-
 .titulo {
   width: 100%;
 }
@@ -26,18 +22,6 @@ header {
 .logo {
   width: 100px;
   height: 100px;
-}
-.container_tarjetas {
-  display: flex;
-  justify-content: center;
-}
-
-.container_imagen {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background: white;
 }
 
 .imagen {
@@ -69,34 +53,6 @@ header {
   background-color: white;
 }
 
-.tarjeta {
-  margin: 2rem;
-  max-width: 300px;
-
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
-  border-radius: 5px;
-}
-.tarjeta_imagen {
-  width: 100%;
-  height: 240px;
-}
-
-.tarjeta_imagen:hover {
-  transform: scale(1.1);
-}
-.tarjeta_titulo {
-  text-align: center;
-  margin: 10px 0;
-}
-.tarjeta_descripcion {
-  padding: 0 1rem 1rem 1rem;
-}
-.container {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 1320px;
-}
-
 .footer {
   background: rgb(254, 254, 254);
   background: linear-gradient(
@@ -121,6 +77,18 @@ header {
   text-align: right;
   padding: 2rem;
   width: 50%;
+}
+
+/* Tarjetas en mobile*/
+.tarjeta {
+  margin: 2rem;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
+  border-radius: 5px;
+}
+
+.tarjeta_imagen {
+  width: 100%;
+  height: 240px;
 }
 /* CAJA FORMULARIO E IFRAME */
 .caja_contacto {
@@ -181,6 +149,9 @@ header {
 }
 
 @media (min-width: 768px) {
+  a:hover {
+    color: black;
+  }
   .container {
     width: 80%;
   }
@@ -255,6 +226,44 @@ header {
   }
   .imagen {
     animation: fadeIn 1s;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1320px;
+  }
+  .container_tarjetas {
+    display: flex;
+    justify-content: center;
+  }
+  .container_imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: white;
+  }
+  .tarjeta {
+    margin: 2rem;
+    max-width: 300px;
+
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
+    border-radius: 5px;
+  }
+  .tarjeta_imagen {
+    width: 100%;
+    height: 240px;
+  }
+
+  .tarjeta_imagen:hover {
+    transform: scale(1.1);
+  }
+  .tarjeta_titulo {
+    text-align: center;
+    margin: 10px 0;
+  }
+  .tarjeta_descripcion {
+    padding: 0 1rem 1rem 1rem;
   }
 
   .footer {
