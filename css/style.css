@@ -3,80 +3,25 @@
   padding: 0;
   box-sizing: border-box;
 }
-.titulo {
-  width: 100%;
-}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
+
 header {
   background: rgb(254, 254, 254);
-  background: linear-gradient(
-    0deg,
-    rgba(254, 254, 254, 1) 0%,
-    rgba(68, 224, 149, 1) 35%,
-    rgba(22, 217, 123, 1) 100%
-  );
-  /* padding: 0.5rem 0 2rem 0; */
+  background: linear-gradient(0deg, rgb(254, 254, 254) 0%, rgb(68, 224, 149) 35%, rgb(22, 217, 123) 100%);
 }
+
 .logo {
   width: 100px;
   height: 100px;
-}
-
-.imagen {
-  margin-top: 25px;
-  width: 1000px;
 }
 
 .texto_cortes {
   margin-top: 25px;
   text-align: center;
   font-size: 3.5rem;
-}
-
-.texto_cortes_oferta {
-  margin-top: 25px;
-  text-align: center;
-  font-size: 3.5rem;
-  background: rgb(215, 22, 22);
-  background: linear-gradient(
-    90deg,
-    rgba(215, 22, 22, 1) 48%,
-    rgba(224, 193, 68, 1) 64%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-#parte_principal {
-  background-color: white;
-}
-
-.footer {
-  background: rgb(254, 254, 254);
-  background: linear-gradient(
-    180deg,
-    rgba(254, 254, 254, 1) 0%,
-    rgba(22, 215, 155, 1) 35%,
-    rgba(68, 224, 149, 1) 100%
-  );
-  padding: 2rem;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-}
-
-.caja {
-  display: grid;
-  padding: 3rem;
-  grid-row-gap: 20px;
-  justify-content: center;
-}
-.caja_imagen {
-  text-align: right;
-  padding: 2rem;
-  width: 50%;
 }
 
 /* Tarjetas en mobile*/
@@ -90,62 +35,66 @@ header {
   width: 100%;
   height: 240px;
 }
-/* CAJA FORMULARIO E IFRAME */
-.caja_contacto {
-  display: grid;
-  grid-row-gap: 20px;
-  justify-content: center;
-}
-.contenedor_form .form .form-header .form-title {
-  font-weight: normal;
-}
-.contenedor_form .form {
-  background: rgba(0, 0, 0, 0.6);
 
-  max-width: 1150px;
-  margin: auto;
-  padding: 5px 35px;
-  margin-top: 30px;
-  padding-bottom: 30px;
-  border-radius: 3px;
+.imagen {
+  margin-top: 25px;
+  width: 1000px;
 }
-.contenedor_form .form .form-label {
-  display: grid;
-  font-size: 16px;
+
+#parte_principal {
+  background-color: white;
 }
-/* fOOTER */
+
+.texto_cortes_oferta {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 3.5rem;
+  background: rgb(215, 22, 22);
+  background: linear-gradient(90deg, rgb(215, 22, 22) 48%, rgb(224, 193, 68) 64%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.animate__animated.animate__bounceIn {
+  --animate-duration: 4s;
+}
+
+.footer {
+  background: rgb(254, 254, 254);
+  background: linear-gradient(180deg, rgb(254, 254, 254) 0%, rgb(22, 215, 155) 35%, rgb(68, 224, 149) 100%);
+  padding: 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
 .iconofacebook {
   margin-right: 10px;
 }
+
 .iconosredes {
   margin-top: 20px;
 }
+
 .iconored {
   width: 25px;
   height: 25px;
 }
+
+.caja {
+  display: grid;
+  padding: 3rem;
+  grid-row-gap: 20px;
+  justify-content: center;
+}
+
 .imagencortes_uno {
   width: 100vh;
 }
 
 .imagencortes_dos {
   width: 100vh;
-}
-
-.text {
-  text-align: center;
-}
-.texti {
-  padding-left: 3rem;
-  padding-top: 5%;
-}
-.mapa {
-  position: relative;
-  overflow: hidden;
-  padding-top: 30.25%;
-}
-.animate__animated.animate__bounceIn {
-  --animate-duration: 4s;
 }
 
 @media (min-width: 768px) {
@@ -188,18 +137,14 @@ header {
   .caja {
     width: 80%;
     grid-template-columns: auto auto;
-    grid-template-areas:
-      "texto imagenuno"
-      "texto imagendos";
+    grid-template-areas: "texto imagenuno" "texto imagendos";
     grid-column-gap: 3rem;
     justify-items: center;
   }
   .caja_contacto {
     width: 80%;
     grid-template-columns: 600px 300px;
-    grid-template-areas:
-      "mapa_google formulario"
-      "mapa_google formulario";
+    grid-template-areas: "mapa_google formulario" "mapa_google formulario";
   }
   .texti {
     margin-top: 2rem;
@@ -217,7 +162,6 @@ header {
     grid-area: imagendos;
     animation: fadeIn 0.5s;
   }
-
   .mapa {
     grid-area: mapa_google;
   }
@@ -240,13 +184,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-
     background: white;
   }
   .tarjeta {
     margin: 2rem;
     max-width: 300px;
-
     box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
     border-radius: 5px;
   }
@@ -254,7 +196,6 @@ header {
     width: 100%;
     height: 240px;
   }
-
   .tarjeta_imagen:hover {
     transform: scale(1.1);
   }
@@ -265,11 +206,9 @@ header {
   .tarjeta_descripcion {
     padding: 0 1rem 1rem 1rem;
   }
-
   .footer {
     margin-top: 7rem;
   }
-
   @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -281,3 +220,44 @@ header {
     }
   }
 }
+.text {
+  text-align: center;
+}
+
+.texti {
+  padding-left: 3rem;
+  padding-top: 5%;
+}
+
+.mapa {
+  position: relative;
+  overflow: hidden;
+  padding-top: 30.25%;
+}
+
+.caja_contacto {
+  display: grid;
+  grid-row-gap: 20px;
+  justify-content: center;
+}
+
+.contenedor_form .form .form-header .form-title {
+  font-weight: normal;
+}
+
+.contenedor_form .form {
+  background: rgba(0, 0, 0, 0.6);
+  max-width: 1150px;
+  margin: auto;
+  padding: 5px 35px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 3px;
+}
+
+.contenedor_form .form .form-label {
+  display: grid;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */

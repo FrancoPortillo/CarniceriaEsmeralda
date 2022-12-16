@@ -1,0 +1,17 @@
+.texto_cortes_oferta {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 3.5rem;
+  background: rgb(215, 22, 22);
+  background: linear-gradient(
+    90deg,
+    rgba(215, 22, 22, 1) 48%,
+    rgba(224, 193, 68, 1) 64%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.animate__animated.animate__bounceIn {
+  --animate-duration: 4s;
+}

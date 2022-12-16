@@ -1,0 +1,23 @@
+.footer {
+  background: rgb(254, 254, 254);
+  background: linear-gradient(
+    180deg,
+    rgba(254, 254, 254, 1) 0%,
+    rgba(22, 215, 155, 1) 35%,
+    rgba(68, 224, 149, 1) 100%
+  );
+  padding: 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+.iconofacebook {
+  margin-right: 10px;
+}
+.iconosredes {
+  margin-top: 20px;
+}
+.iconored {
+  width: 25px;
+  height: 25px;
+}

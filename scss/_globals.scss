@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background: rgb(254, 254, 254);
+  background: linear-gradient(
+    0deg,
+    rgba(254, 254, 254, 1) 0%,
+    rgba(68, 224, 149, 1) 35%,
+    rgba(22, 217, 123, 1) 100%
+  );
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.texto_cortes {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 3.5rem;
+}
+/* Tarjetas en mobile*/
+.tarjeta {
+  margin: 2rem;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
+  border-radius: 5px;
+}
+
+.tarjeta_imagen {
+  width: 100%;
+  height: 240px;
+}
