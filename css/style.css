@@ -33,7 +33,7 @@ header {
 
 .tarjeta_imagen {
   width: 100%;
-  height: 240px;
+  height: 100%;
 }
 
 .navbar-toggler-icon {
@@ -103,10 +103,12 @@ header {
 
 .imagencortes_uno {
   width: 100vh;
+  height: auto;
 }
 
 .imagencortes_dos {
   width: 100vh;
+  height: auto;
 }
 
 .text {
@@ -178,8 +180,9 @@ header {
   }
   .caja {
     width: 80%;
+    margin: 0 auto;
     grid-template-columns: auto auto;
-    grid-template-areas: "texto imagenuno" "texto imagendos";
+    grid-template-areas: "texto texto" "imagenuno imagendos";
     grid-column-gap: 1rem;
     justify-items: center;
   }
@@ -202,10 +205,12 @@ header {
   .imagencortes_uno {
     grid-area: imagenuno;
     animation: fadeIn 0.5s;
+    height: 600px;
   }
   .imagencortes_dos {
     grid-area: imagendos;
     animation: fadeIn 0.5s;
+    height: 600px;
   }
   .mapa {
     grid-area: mapa_google;
