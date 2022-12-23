@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   a:hover {
     color: black;
   }
@@ -111,6 +111,37 @@
     }
     .tarjeta_descripcion {
       padding: 0 1rem 1rem 1rem;
+    }
+    .tarjeta_precio {
+      position: relative;
+      justify-content: flex-end;
+      text-align: flex-end;
+      bottom: -55px;
+    }
+    .tarjeta_precio_uno {
+      position: relative;
+      justify-content: flex-end;
+      text-align: flex-end;
+      bottom: -70px;
+    }
+
+    .tarjeta_precio_tres {
+      position: relative;
+      justify-content: flex-end;
+      text-align: flex-end;
+      bottom: -35px;
+    }
+    .tarjeta_precio_picanha {
+      position: relative;
+      justify-content: flex-end;
+      text-align: flex-end;
+      bottom: -95px;
+    }
+    .tarjeta_precio_rack {
+      position: relative;
+      justify-content: flex-end;
+      text-align: flex-end;
+      bottom: -83px;
     }
   }
 
